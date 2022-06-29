@@ -32,7 +32,7 @@ git checkout origin/gh-pages || git checkout -b gh-pages
 
 
 
-echo "listing directory"
+echo "listing directory001"
 ls -la
 
 rm -rf doc lib "$PR_NUMBER" # Delete previous documents.
