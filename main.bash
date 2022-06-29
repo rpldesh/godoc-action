@@ -10,6 +10,8 @@ REPO_NAME="$(basename $(echo $GITHUB_REPOSITORY))"
 # PR_NUMBER="$(echo $GITHUB_REF | sed 's#refs/heads/\(.*\)/.*#\1#')"
 PR_NUMBER="master"
 
+echo "Repo is $REPO_NAME"
+
 echo "PR number is $PR_NUMBER"
 
 #mkdir -p "$GOPATH/src/github.com/$GITHUB_REPOSITORY"
