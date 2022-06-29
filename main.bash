@@ -38,7 +38,7 @@ rm -rf doc lib "$PR_NUMBER" # Delete previous documents.
 #rm -rf localhost:8080
 #find pkg -type f -exec sed -i "s#/lib/godoc#/$REPO_NAME/lib/godoc#g" {} +
 
-
+echo "Running docker##"
 docker run --rm -v $(pwd)/doc:/out -v $(pwd)/protocs:/protos:ro pseudomuto/protoc-gen-doc
 
 echo "listing directory2"
